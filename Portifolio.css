@@ -1,0 +1,394 @@
+
+        body {
+            font-family:"ComfortaA",sans-serif;
+            background-image: url('/img/img/Fundo\ do\ site.png');
+            background-size: cover; /* Ajusta a imagem para cobrir toda a área */
+            margin: 0;
+        }
+/*Manu de Navegação -----------------------------------------------------------------------*/
+
+        header {
+        background-color: #F2F2F2;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0px 90px;
+      }
+
+       /* Logo */
+      #logo {
+        margin: 15px;
+        max-width: 350px;
+      }
+
+       /* Barra de navegação */
+      .abas {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        gap: 30px; /* Aumenta o espaçamento entre as abas */
+      }
+
+       /* Estilo para as abas sem fundo */
+      .aba a {
+        color: #6B63CE /* Cor do texto */;
+        text-decoration: none;
+        font-size: 18px;
+        padding: 5px 10px;
+       }
+
+       /* Estilo para a aba de "Contato" */
+      .aba a#contact {
+        padding: 12px;
+        background-color: #5A9EDB; /* Fundo da aba de Contato */
+        color: white; /* Texto em branco */
+        border-radius: 50px; /* Cantos arredondados */
+      }
+
+       /* Efeito de hover */
+      .aba a:hover {
+        color: #5A9EDB; /* Cor ao passar o mouse */
+      }
+/*-----------------------------------------------------------------------------------------*/
+
+
+/* Rodapé --------------------------------------------------------------------------------*/
+
+      footer {
+        background-color: #5BAAA1;
+        color: white;
+        text-align: center;
+        padding: 20px 10px;
+        position: relative;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+      }
+
+      footer p {
+        margin: 5px 0;
+      }
+
+      footer a {
+        color:#ffffff;
+        text-decoration: none;
+      }
+
+      footer a:hover {
+        text-decoration: underline;
+      }
+/*-----------------------------------------------------------------------------------------*/
+        /* Conteúdo */
+        .fundo2{
+            padding: 15px;
+            margin: 15px;
+            border-radius: 15px;
+            background-color: #6B63CE;
+        }
+
+        .categories {
+            width: auto;
+            text-align: center;
+            border-radius: 100px;
+            background-color:#5BAAA199;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+        }
+
+        /* Estilo para a categoria sem fundo */
+        .categories .category {
+            padding: 10px 20px;
+            color:#f6f5ff;
+            cursor: pointer;
+            border-radius: 100px;
+            text-align: center;
+            font-size: 25px;
+        }
+
+        /* Estilo para a categoria quando estiver selecionada */
+        .categories .category.selected {
+            background-color: #5BAAA1; /* Cor de fundo quando selecionada */
+        }
+
+        /* Efeito de hover - sem fundo visível */
+
+
+
+
+        .main-content {
+            padding: 100px;
+            padding-bottom:0px ;
+            padding-top: 25px ;
+            flex: 1;
+        }
+
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            gap: 20px;
+            padding: 10px;
+        }
+
+        .project {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .project img {
+            max-width: 100%;
+            border-radius: 5px;
+        }
+
+        .project h4 {
+            margin: 10px 0 5px;
+        }
+
+        .project p {
+            font-size: 15px;
+            color: #555;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        .carousel-container{
+            padding: 0% 70px 0% 70px;
+        }
+
+        .carousel-control-prev-icon,.carousel-control-next-icon {
+            background-color: rgba(0, 0, 0, 0.5); /* Cor de fundo semitransparente */
+            border-radius: 50%; /* Torna o fundo arredondado */
+            width: 40px; /* Ajusta o tamanho */
+            height: 40px;
+        }
+
+        .carousel-control-prev-icon {
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23ffffff' viewBox='0 0 16 16'%3E%3Cpath d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z'/%3E%3C/svg%3E");
+        }
+
+        .carousel-control-next-icon {
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23ffffff' viewBox='0 0 16 16'%3E%3Cpath d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z'/%3E%3C/svg%3E");
+        }
+
+        .descri{
+          text-align: left;
+        }
+
+
+
+
+/*Serviço--------------------------------------------------------------------------------------*/
+.servico {
+    padding: 50px 0;
+    background-color: #f8f8f8;
+  }
+          
+  #serv {
+    margin-left: 150px;
+    margin-right: 150px;
+    display: flex; /* Exibe os serviços em linha */
+    justify-content: space-around; /* Espalha os serviços igualmente */
+    flex-wrap: wrap; /* Permite que as divs se ajustem em uma nova linha se necessário */
+    gap: 30px; /* Espaçamento entre os serviços */
+  }
+
+  .servs {
+    width: 500px; /* Ajusta a largura dos serviços */
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative; /* Para posicionar o texto sobre a imagem */
+  }
+
+  .servs img {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+  }
+
+  .servs h3 {
+    margin: 15px;
+    background-color: #6B63CE;
+    padding: 15px;
+    border-radius: 10px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    z-index: 2;
+  }
+
+  .servs li {
+    list-style-type: circle;
+    font-size: 16px;
+    color: #333;
+    margin: 5px 0;
+  }
+
+  .servs li::before {
+    color: #5A9EDB;
+    font-size: 18px;
+    margin-right: 10px;
+  }
+  .dserv{
+    margin-top: 15px;
+    font-size: 18px;
+  }
+
+  .saiba-mais{
+    margin: 25px;
+    font-size: 25px;
+    text-align: center;
+  }
+  h1{
+    margin: 10px;
+    font-size: 40px;
+    text-align: center;
+  }
+
+
+/*----------------------------------------------------------------------------------------------*/
+
+/*Contato--------------------------------------------------------------------------------------*/
+      .contato{
+        padding: 25px;
+        text-align: center;
+        background-color:#908bd4;
+      }
+      .contato h1{
+        color: #fff;
+        font-size: 35px;
+      }
+      input, textarea{
+        border: 0px;
+        padding: 10px;
+        border-radius: 10px;
+        width: 400px;
+      }
+      .btn2{
+        border: 0px;
+        border-radius: 10px;
+        padding: 10px;
+        color: #fff;
+        background-color:#5BAAA1;
+      }
+/*----------------------------------------------------------------------------------------------*/
+   
+
+        /* Estilos para tablets (largura entre 481px e 768px) */
+        @media (max-width: 1680px){ 
+            .categories {
+            width:100%;
+            text-align: center;
+            border-radius: 100px;
+            background-color:#7ad3c9;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+        }
+        }
+
+        @media (max-width: 1080px){
+        header {
+            display:block;
+            align-items: center;
+            padding: 15px 90px;
+        }
+        #logo {
+          margin: 20px 10px 20px 10px;
+
+        }
+
+        #Manu{
+            text-align: center;
+        }
+
+        .abas {
+            list-style-type: none;
+            gap: 0px;
+            justify-content: space-between;
+        }
+        .aba a{
+          font-size: 25px;
+        }
+
+        .projects {
+          grid-template-columns: 2fr;
+      }
+        }
+
+        @media (max-width: 780px) {
+          header {
+            padding: 15px 40px;
+          }
+            .main-content {
+                margin-left: 0;
+                padding: 40px;
+            }
+            .projects {
+                grid-template-columns: 1fr;
+            }
+            .project h4 {
+                font-size: 20px;
+            }
+            li a {
+            font-size: 17px;
+            padding: 5px 10px;
+        }
+        .aba a{
+          font-size: 20px;
+        }
+        #serv{
+          margin: 30px;
+        }
+        
+        }
+
+        @media (max-width:420px){
+          #logo{
+            width: 300px;
+            margin: 0px;
+          }
+          .abas{
+            display:block;
+            margin-bottom: 15px;
+
+          }
+          .aba{
+            margin: 15px;
+          }
+          .categories .category {
+            padding: 10px 5px;
+            cursor: pointer;
+            border-radius: 100px;
+            font-size: 20px;
+        }
+        .fundo2{
+          margin: 0px;
+
+        }
+        .main-content{
+          padding: 10px;
+        }
+
+        input, textarea {
+          
+            width: 300px;
+          }
+          
+      }
+
